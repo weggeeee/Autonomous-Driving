@@ -57,12 +57,6 @@ counter = 1;
 loopThresh = 32; 
 
 while (1)
-
-%     if mod(counter,5) == 1
-%         writePosition(v,.5125);
-%     else
-%         writePosition(v, .49);
-%     end
     if udpB.BytesAvailable > 0
             data = fread(udpB, udpB.BytesAvailable);
             flushinput(udpB);
