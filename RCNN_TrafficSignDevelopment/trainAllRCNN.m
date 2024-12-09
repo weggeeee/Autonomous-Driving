@@ -1,7 +1,7 @@
 clear all;
 close all;
 cifar10Data = tempdir;
-path = 'C:\Users\Mir\OneDrive\OneDrive - Clemson University\Spring2022\ADT\FinalProject\stopSignSchoolSignAll.mat';
+path = 'C:\Users\stopSignSchoolSignAll.mat';
 load(path);
 
     options = trainingOptions('sgdm', ...
@@ -13,7 +13,7 @@ load(path);
     'ExecutionEnvironment', 'parallel');
 
     % Train an R-CNN object detector. This will take several minutes. 
-    load('C:\Users\Mir\OneDrive\OneDrive - Clemson University\Spring2022\ADT\FinalProject\models\cifar10.mat')
+    load('C:\Users\models\cifar10.mat')
 
     rcnn = trainRCNNObjectDetector(stopSignSchoolSignAll, cifar10Net, options, ...
     'NegativeOverlapRange', [0 0.3], 'PositiveOverlapRange',[0.5 1])
