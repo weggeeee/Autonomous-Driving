@@ -1,9 +1,9 @@
 clear all;
 close all;
 
-load('C:\Users\Mir\OneDrive\OneDrive - Clemson University\Spring2022\ADT\FinalProject\models\rcnnSchoolSign.mat');
+load('C:\Users\Mir\models\rcnnSchoolSign.mat');
 
-filePattern = fullfile('C:\Users\Mir\OneDrive\OneDrive - Clemson University\Spring2022\ADT\FinalProject\Road Sign Images\PositiveImages_stopSign\*.jpg'); % Change to whatever pattern you need.
+filePattern = fullfile('C:\Users\Road Sign Images\PositiveImages_stopSign\*.jpg'); % Change to whatever pattern you need.
 theFiles = dir(filePattern);
 
 for k = 1 : length(theFiles)
