@@ -2,7 +2,7 @@ clear all;
 close all;
 
 % Load Traffic Sign Model
-load('C:\Users\Nico Weckardt\Desktop\Uni\OneDrive - Clemson University\Spring2022\ADT\FinalProject\models\rcnnAll.mat');
+load('C:\Users\models\rcnnAll.mat');
 
 cam = webcam("HD Webcam C615")
 next = 0;
