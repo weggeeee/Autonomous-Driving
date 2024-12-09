@@ -22,6 +22,7 @@ while true
     elseif label(idx) == 'stopSign' & score > 0.95
         stopSign = 1;
     end
+    
 % Write progress and result on console    
     stopSign
     schoolSign
